@@ -30,12 +30,11 @@ const decode = (s) => {
 // console.log( encode(encode(msg)) )
 
 // Events
-elm_inputs[0].addEventListener("input", function (e) {
+elm_inputs[0].addEventListener("input", (e) => {
     elm_inputs[1].value = encode(e.target.value)
-    alert(this.value)
 })
 
-elm_inputs[1].addEventListener("input", function (e) {
+elm_inputs[1].addEventListener("input", (e) => {
     elm_inputs[0].value = decode(e.target.value)
 })
 
