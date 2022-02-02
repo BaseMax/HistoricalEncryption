@@ -2,31 +2,37 @@
 const elm_inputs = document.querySelectorAll("input")
 
 // Functions
+const alphabets = "یهونملگکقفغعظطضصشسژزرذدخحچجثتپباء" + "abcdefghijklmnopqrstuvwxyz"
+const letters = alphabets.split("")
+
 const encode = (s) => {
     let res = ""
-    for(let i=0;i<s.length-1;i+=2) {
-        res += s[i+1]
-        res += s[i]
+    for(let i=0;i<s.length;i++) {
+        const index1 = letters.indexOf(s[i])
+        if(index1 !== -1) res += alphabets[alphabets.length - 1 - index1]
+        else res += s[i]
     }
-    if(s.length % 2 !== 0) res += s[s.length-1]
     return res
 }
 
 const decode = (s) => {
     let res = ""
-    for(let i=0;i<s.length-1;i+=2) {
-        res += s[i+1]
-        res += s[i]
+    for(let i in letters) console.log(i, letters[i])
+    // console.log(letters)
+    for(let i=0;i<s.length;i++) {
+        const index1 = letters.indexOf(s[i])
+        console.log(s[i], index1, alphabets.length, alphabets.length - index1)
+        if(index1 !== -1) res += alphabets[alphabets.length - index1 -1]
+        else res += s[i]
     }
-    if(s.length % 2 !== 0) res += s[s.length-1]
     return res
 }
 
 // Test
 // const msg = "سلام بر ریاضیات"
-// const msg = "himax"
-// console.log( encode(msg) )
-// console.log( decode(encode(msg)) )
+const msg = "himax"
+console.log( encode(msg) )
+console.log( decode(encode(msg)) )
 // console.log( encode(encode(msg)) )
 
 // Events
