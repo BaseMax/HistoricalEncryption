@@ -1,10 +1,9 @@
 // Const
 const elm_inputs = document.querySelectorAll("input")
-
-// Functions
 const alphabets = "یهونملگکقفغعظطضصشسژزرذدخحچجثتپباء" + "abcdefghijklmnopqrstuvwxyz"
 const letters = alphabets.split("")
 
+// Functions
 const encode = (s) => {
     let res = ""
     for(let i=0;i<s.length;i++) {
@@ -30,9 +29,9 @@ const decode = (s) => {
 
 // Test
 // const msg = "سلام بر ریاضیات"
-const msg = "himax"
-console.log( encode(msg) )
-console.log( decode(encode(msg)) )
+// const msg = "himax"
+// console.log( encode(msg) )
+// console.log( decode(encode(msg)) )
 // console.log( encode(encode(msg)) )
 
 // Events
