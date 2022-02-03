@@ -12,6 +12,8 @@ const encode = (s) => {
     return res
 }
 
+// Note: decode is exactly same as encode, so we can keep one and use that!
+// It's for learning purpose.
 const decode = (s) => {
     let res = ""
     for(let i=0;i<s.length-1;i+=2) {
