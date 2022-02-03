@@ -1,7 +1,8 @@
 # Historical Encryption
 
-My education field is pure mathematics and i studied about **Historical mathematics**. In past people used mathematics for **encryption** the letter text or message.
+Two Historical Encryption which used in past, refer to history of mathematics. Powered by JS, you can run it at browsers!
 
+> My education field is pure mathematics and i studied about **Historical mathematics**. In past people used mathematics for **encryption** the letter text or message.
 But it was not much complex such as nowdays.
 
 They used two different way:
