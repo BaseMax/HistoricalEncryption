@@ -6,8 +6,8 @@ But it was not much complex such as nowdays.
 
 They used two different way:
 
-1- Change order (Move each char)
-2- Change and switching the letters
+- Change order (Move each char)
+- Change and switching the letters
 
 ## Demo
 
