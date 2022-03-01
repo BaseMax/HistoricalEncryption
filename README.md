@@ -1,6 +1,6 @@
 # Historical Encryption
 
-Two Historical Encryption which used in past, refer to history of mathematics. Powered by JS, you can run it at browsers!
+Two Historical Encryption which used in past, refer to history of mathematics. Powered by JS, So you can run it on browsers!
 
 > My education field is pure mathematics and i studied about **Historical mathematics**. In past people used mathematics for **encryption** the letter text or message.
 But it was not much complex such as nowdays.
